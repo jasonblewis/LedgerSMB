@@ -9,7 +9,7 @@
 		    <div class="inputrow">
 			<label id="s-user-label" for="s-user" class="username">Super-user login</label>
 			<select id="s-user" class="username" title="Super-user login" name="s_user" size="15" data-dojo-type="dijit/form/ComboBox" data-dojo-props="value:'', placeHolder:'Select or Enter User'">
-			    
+
 			    <option  id="s-user-1" value="lsmb_dbadmin" >lsmb_dbadmin</option><option  id="s-user-2" value="postgres" >postgres</option>
 			</select>
 		    </div>
