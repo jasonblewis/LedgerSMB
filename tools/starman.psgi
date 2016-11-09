@@ -19,7 +19,7 @@ use LedgerSMB;
 use LedgerSMB::Auth;
 use LedgerSMB::PSGI;
 use LedgerSMB::Sysconfig;
-use LedgerSMB::Dancer2;
+use LedgerSMB::Setup;
 use Log::Log4perl;
 use Plack::Builder;
 use Plack::App::File;
@@ -77,7 +77,7 @@ builder {
         if $ENV{COVERAGE};
 
     mount '/' => Plack::App::File->new( root => 'UI' )->to_app;
-    mount '/dancer2/' => LedgerSMB::Dancer2->to_app;
+    mount '/d2setup/' => LedgerSMB::Setup->to_app;
 };
 
 # -*- perl-mode -*-
