@@ -19,6 +19,12 @@ charset: "UTF-8"
 # template_toolkit: TT
 
 template: "template_toolkit"
+engines:
+  template:
+    template_toolkit:
+      start_tag: '\<\?lsmb'
+      end_tag:   '\?\>'
+      debug: 'DEBUG_UNDEF' 
 
 # session engine
 #
